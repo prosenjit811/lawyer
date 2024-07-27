@@ -1,0 +1,365 @@
+/*fonts link*/
+@font-face {
+	src: url(../fonts/roboto-regular.ttf);
+  	font-family: roboto-regular;
+ 	 font-weight: 400;
+}
+@font-face {
+	src: url(../fonts/roboto-medium.ttf);
+  	font-family: roboto-medium;
+ 	 font-weight: 500;
+}
+@font-face {
+	src: url(../fonts/lato-regular.ttf);
+  	font-family: lato-regular;
+  	font-weight: 400;
+}
+@font-face {
+	src: url(../fonts/lato-semibold.ttf);
+  	font-family: lato-semibold;
+  	font-weight: 500;
+}
+@font-face {
+	src: url(../fonts/lato-bold.ttf);
+  	font-family: lato-bold;
+  	font-weight: 700;
+}
+
+/*global*/
+:root{
+	--white: #ffffff;
+	--grey: #b0b0b1;
+	--blue: #204f87;
+	--orange: #f2622c;
+
+	--rb: 'roboto', sans-serif;
+	--lto: 'lato', sans-serif;
+
+	--fw4: 400;
+	--fw5: 500;
+	--fw7: 700;
+
+	--27: 27px;
+	--40: 40px;
+
+}
+
+/*global*/
+body{
+	font-family: var(--rb);
+	font-size: 16px;
+	font-weight: var(--fw4);
+	line-height: var(--27);
+	color: var(--grey);
+}
+/*global*/
+
+.tp{
+	padding-top: 100px;
+}
+.bp{
+	padding-bottom: 100px;
+}
+
+/*<============ header start ==============>*/
+.header{}
+.logo{}
+.main_menu{}
+.menu{
+	font-family: var(--lto);
+	font-size: 16px;
+	font-weight: var(--fw5);
+	line-height: var(--27);
+	text-transform: uppercase;
+}
+.menu li a{
+	color: var(--blue) !important;
+	transition: .33s linear;
+}
+.menu li:hover a{
+	color: var(--orange) !important;
+}
+
+/*<============ header end ==============>*/
+
+
+/*<============ banner start ==============>*/
+.banner{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.slider{}
+.b_slider{
+	padding: 230px 0;
+}
+.banner_item{}
+.banner_item h1{
+	font-family: var(--lto);
+	font-size: 82px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+}
+
+/*<============ banner end ==============>*/
+
+
+/*<============ about us start ==============>*/
+.aboutus{}
+.common_content{}
+.line{
+	margin-bottom: 25px;
+	width: 60px;
+	height: 4px;
+	background-color: var(--orange);
+}
+.comn_h1{
+	margin: 0;
+	font-family: var(--lto);
+	font-size: 36px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+	line-height: var(--40);
+	color: var(--blue);
+}
+.comn_p{
+	padding: 35px 0;
+
+}
+.comn_pp{}
+
+.abt_image{
+	float: right;
+	overflow: hidden;
+}
+.abt_image img{
+	transition: .33s linear;
+}
+.abt_image:hover img{
+	scale: 1.1;
+}
+
+
+/*<============ about us end ==============>*/
+
+/*<============ services start ==============>*/
+.services{
+	background-color: #f7f8f8;
+	padding-top: 80px;
+}
+.service_item{
+	margin-top: 50px;
+	position: relative;
+}
+.service_image{
+	
+}
+.service_image img{}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: var(--blue);
+	opacity: 0;
+	transition: .32s linear;
+}
+.overlay:hover{
+	opacity: .5;
+}
+
+.overlay_content{}
+.ser_h2{
+	margin: 0;
+	padding: 200px 0 50px;
+	font-family: var(--lto);
+	font-size: 26px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+	line-height: var(--40);
+	color: var(--white);
+}
+.ser_btn{
+	color: var(--white);
+}
+/*<============ services end ==============>*/
+
+
+/*<============ team end ==============>*/
+.team{
+	background-image: url(../images/bag.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tm_content{
+	padding-top: 100px;
+}
+.tm_h1{
+	color: var(--white);
+}
+.tm_p{
+	color: var(--white);
+}
+.tm_btn{
+	padding: 0;
+	font-family: var(--lto);
+	font-size: 18px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+	line-height: 38px;
+	color: var(--orange);
+	border: none;
+	background-color: transparent;
+}
+.tm_btn:hover{
+	border: none;
+	color: var(--white);
+}
+.team_member{
+	padding-top: 75px;
+}
+.member_img{}
+.member_img img{}
+.team_name{
+	margin: -100px 0 0;
+	padding: 0 20px;
+	font-family: var(--lto);
+	font-size: 24px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+	line-height: 38px;
+	color: var(--white);
+}
+
+/*<============ team end ==============>*/
+
+
+/*<============ language start =========*/
+.language{}
+.lan_content{}
+.lan_line{}
+.lan_h1{}
+.language_content{
+	margin-top: 80px;
+	padding: 20px;
+	transition: .33s linear;
+}
+.lan_h2{
+	margin: 0;
+	font-family: var(--lto);
+	font-size: 24px;
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+	line-height: 40px;
+	color: var(--blue);
+}
+.language_content:hover{
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.lan_p{
+	margin: 0;
+	padding: 15px 0 25px;
+}
+.lan_pp{
+	margin: 0;
+}
+.lan_btn{
+	margin: 15px 0 0;
+	font-family: var(--lto);
+	font-size: 16px;
+}
+.lan_btn:hover{
+	color: var(--blue);
+}
+
+/*<============ language end ==============>
+
+/*============ contact start ============*/
+.contact{
+	padding-top: 65px;
+	background-color: #28377e;
+}
+.cont_form{}
+.f_name, .l_name, .con_mail, .cont_textra{
+	padding-top: 35px;
+	font-family: var(--lto);
+	font-weight: var(--fw4);
+	font-size: 16px;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid var(--grey);
+	border-radius: 0;
+	color: white;
+}
+::placeholder{
+	color: var(--white) !important;
+}
+.f_name:focus{
+	color: var(--white) !important;
+	border-color: var(--orange);
+	box-shadow: none;
+	background-color: transparent;
+}
+.l_name:focus{
+	color: var(--white) !important;
+	border-color: var(--orange);
+	box-shadow: none;
+	background-color: transparent;
+}
+.con_mail:focus{
+	color: var(--white) !important;
+	border-color: var(--orange);
+	box-shadow: none;
+	background-color: transparent;
+}
+.cont_textra:focus{
+	color: var(--white) !important;
+	border-color: var(--orange);
+	box-shadow: none;
+	background-color: transparent;
+}
+.cont_btn{
+	margin: 50px 0 0;
+	padding: 15px 80px;
+	font-family: var(--rb);
+	font-weight: var(--fw5);
+	background-color: var(--orange);
+	text-transform: uppercase;
+	color: var(--white);
+	border-radius: 0;
+	transition: .33s linear;
+}
+.cont_btn:hover{
+	background-color: var(--white);
+	color: var(--orange);
+}
+
+/*============ contact end ==============*/
+
+
+/*============ footer start ==============*/
+.footer{
+	padding: 50px 0;
+	background-color: #0c1234;
+}
+.copyright{}
+.ccopyright_p{
+	color: var(--white);
+}
+.social_icon{
+	float: right;
+}
+.f_sicon{}
+.f_sicon a{}
+.f_sicon a i{
+	font-size: 22px;
+	color: var(--white) !important;
+	transition: .33s linear;
+}
+.f_sicon:hover a i{
+	color: var(--orange) !important;
+}
+/*============ footer end ==============*/
